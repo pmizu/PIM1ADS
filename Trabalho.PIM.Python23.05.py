@@ -10,8 +10,7 @@ def etapa_1():
             if idade <= 16:
                 break
             else:
-                print(
-                    "Apenas usuários com idade de até 16 anos podem se cadastrar. Tente novamente.")
+                print("Apenas usuários com idade de até 16 anos podem se cadastrar. Tente novamente.")
         else:
             print("Entrada inválida! Por favor, digite um número.")
 
@@ -19,8 +18,7 @@ def etapa_1():
 
 
 def etapa_2():
-    resposta = input(
-        "Você autoriza o uso de seus dados para análises estatísticas? (Sim/Não): ").strip().lower()
+    resposta = input("Você autoriza o uso de seus dados para análises estatísticas? (Sim/Não): ").strip().lower()
 
     if resposta == "sim":
         return True
@@ -45,8 +43,7 @@ def etapa_4():
         print("1. Pseudocódigo")
         print("2. Fluxograma")
 
-        escolha = input(
-            "\nDigite o número correspondente à sua escolha: ").strip()
+        escolha = input("\nDigite o número correspondente à sua escolha: ").strip()
 
         if escolha == "1":
             print("\nVocê escolheu: Pseudocódigo. Ele é uma representação textual e estruturada do algoritmo, usando uma linguagem próxima do português (ou inglês) com comandos simples.")
@@ -59,29 +56,24 @@ def etapa_4():
         elif escolha == "2":
             print("\nVocê escolheu: Fluxograma. O Fluxograma é uma representação gráfica do algoritmo usando símbolos visuais padronizados (como retângulos, losangos e setas) para mostrar o fluxo das ações.")
             print("Exemplo (fluxograma textual):")
-            print(
-                "[Início] → [Ler A] → [Ler B] → [Soma = A + B] → [Escrever Resultado] → [Fim]")
+            print("[Início] → [Ler A] → [Ler B] → [Soma = A + B] → [Escrever Resultado] → [Fim]")
         else:
-            print(
-                "Opção inválida! Por favor, escolha 1 para Pseudocódigo ou 2 para Fluxograma.")
+            print("Opção inválida! Por favor, escolha 1 para Pseudocódigo ou 2 para Fluxograma.")
             continue
 
         while True:
-            comando = input(
-                "\nDigite 'avançar' para prosseguir ou 'voltar' para escolher novamente: ").strip().lower()
+            comando = input("\nDigite 'avançar' para prosseguir ou 'voltar' para escolher novamente: ").strip().lower()
             if comando == "avançar":
                 return
             elif comando == "voltar":
                 break
             else:
-                print(
-                    "Comando inválido! Digite 'avançar' para seguir ou 'voltar' para retornar à escolha.")
+                print("Comando inválido! Digite 'avançar' para seguir ou 'voltar' para retornar à escolha.")
 
 
 def etapa_5():
     while True:
-        resposta = input(
-            "\nDeseja sair do sistema? (Sim/Não): ").strip().lower()
+        resposta = input("\nDeseja sair do sistema? (Sim/Não): ").strip().lower()
         if resposta == "sim":
             print("\nSaindo do sistema... Reiniciando cadastro.\n")
             return False  # Retorna à etapa 1
@@ -110,8 +102,7 @@ main()
 
 def etapa_5():
     while True:
-        resposta = input(
-            "\nDeseja sair do sistema? (Sim/Não): ").strip().lower()
+        resposta = input("\nDeseja sair do sistema? (Sim/Não): ").strip().lower()
         if resposta == "sim":
             print("\nSaindo do sistema... Reiniciando cadastro.\n")
             return False  # Retorna à etapa 1
